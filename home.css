@@ -1,0 +1,123 @@
+/* Home.css */
+
+/* Background */
+.background-image {
+    background-image: url('https://pbs.twimg.com/media/GWIuXqtWUAA3Y0d.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    filter: brightness(60%);
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    background-color: rgba(255, 249, 249, 0.6);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #ffeb3b;
+}
+
+/* Main Content */
+.content {
+    margin-top: 100vh; /* Push the content down below the background image */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Aligns items at the start */
+    padding: 2rem;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row; /* Allows text and image to be side by side */
+    align-items: center; /* Vertically centers the content */
+}
+
+.text-content {
+    max-width: 60%;
+    color: rgb(12, 4, 4);
+    animation: fadeIn 2s ease-in-out;
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.description {
+    color: black;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.quote {
+    font-style: italic;
+    color: #ffeb3b;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+/* Image */
+.image-content {
+    flex: 1;
+    padding-left: 2rem;
+}
+
+.side-image {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+.footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+   
+    bottom: 0;
+    width: 100%;
+}
+
+.social-icon {
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

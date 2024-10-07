@@ -1,0 +1,92 @@
+/* Timeline.css */
+
+.timeline-container {
+    margin: 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.timeline h2 {
+    text-align: center;
+    color: #333;
+}
+
+.timeline {
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 300px; /* Set maximum height for scrolling */
+    position: relative; /* For absolute positioning of the pointer */
+    padding-left: 20px; /* Space for the timeline pointer */
+}
+
+.timeline-track {
+    position: relative; /* For child absolute positioning */
+}
+
+.timeline-item {
+    position: relative; /* For positioning the pointer */
+    margin: 1.5rem 0; /* Space between items */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s ease;
+}
+
+.timeline-item:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.timeline-pointer {
+    position: absolute;
+    left: -10px; /* Adjust based on your layout */
+    top: 0; /* Aligns with the top of the item */
+    width: 15px;
+    height: 15px;
+    background-color: #ffeb3b; /* Color of the pointer */
+    border-radius: 50%; /* Make it circular */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+
+.timeline-date {
+    font-weight: bold;
+    color: #ff5722;
+}
+
+.timeline-content {
+    margin-left: 30px; /* Adjust to position text content */
+}
+
+.timeline-content h3 {
+    margin: 0;
+    color: #333;
+}
+
+.timeline-content p {
+    margin: 0.5rem 0 0 0;
+    color: #555;
+}
+
+/* Display selected year information */
+.selected-year-info {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.selected-year-info h3 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.selected-year-info p {
+    color: #555;
+}
+
+.event-image {
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
